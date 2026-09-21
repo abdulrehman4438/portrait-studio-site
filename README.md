@@ -1,10 +1,10 @@
-# Portrait Studio — Public Website & Legal Compliance Pages
+# 80s Portrait — Public Website & Legal Pages
 
-This directory contains the responsive, accessible, zero-tracking public website and legal documentation for the iOS app **Portrait Studio** (internal project identifier: `RetroPortrait`).
+This repository contains the responsive, accessible, zero-tracking public website and legal documentation for the iOS app **80s Portrait**.
 
 ## 1. Route Map & Public URLs
 
-When published (e.g., via GitHub Pages at `https://<username>.github.io/<repo>/` or custom domain `https://portrait-studio.app`), the following permanent, clean URLs are served:
+The website is published at `https://abdulrehman4438.github.io/portrait-studio-site/` with these permanent HTTPS routes:
 
 | Route | File Location | Purpose & App Store Usage |
 | :--- | :--- | :--- |
@@ -19,28 +19,13 @@ When published (e.g., via GitHub Pages at `https://<username>.github.io/<repo>/`
 
 ---
 
-## 2. Pre-Publishing Operator Checklist
+## 2. Operator details
 
-> [!IMPORTANT]
-> To ensure genuine compliance and avoid fabricated claims, the following variables have been intentionally marked with visible `REPLACE_BEFORE_PUBLISHING_*` placeholders across all HTML files and `site-config.json`. You must supply your actual details before publishing to production.
-
-| Variable Marker | Description | Required Action |
-| :--- | :--- | :--- |
-| `REPLACE_BEFORE_PUBLISHING_OPERATOR_LEGAL_NAME` | Legal entity or individual developer name | Replace with legal business name (e.g. `Studio Labs LLC`) |
-| `REPLACE_BEFORE_PUBLISHING_JURISDICTION` | Legal jurisdiction for Terms of Use | Replace with state/province/country (e.g. `State of California, USA`) |
-| `REPLACE_BEFORE_PUBLISHING_SUPPORT_EMAIL` | Public customer support email | Replace with active support inbox (e.g. `support@...`) |
-| `REPLACE_BEFORE_PUBLISHING_PRIVACY_EMAIL` | Data protection & privacy contact | Replace with privacy contact email |
-| `REPLACE_BEFORE_PUBLISHING_APP_STORE_URL` | Live App Store download link | Add once the app record is created in App Store Connect |
-
-### Updating Placeholders Automatically:
-You can replace all placeholders in one step using the included script:
-```bash
-python3 website/scripts/replace-variables.py \
-  --operator "Your Company Name LLC" \
-  --jurisdiction "Your Jurisdiction" \
-  --email "support@yourdomain.com" \
-  --app-store-url "https://apps.apple.com/app/idYOUR_APP_ID"
-```
+- Operator: Abdulrehman Ishaq
+- Jurisdiction: State of Texas, United States
+- Support and privacy contact: `a.rehmanishaq70103@gmail.com`
+- A private mailing address is intentionally not published.
+- The App Store button remains a non-clickable “coming soon” label until Apple issues the public product URL.
 
 ---
 
@@ -70,7 +55,7 @@ If publishing as a dedicated GitHub repository (e.g., `portrait-studio-site`):
 cd website
 git init
 git add .
-git commit -m "feat: initial release of Portrait Studio public website and legal pages"
+git commit -m "feat: initial release of 80s Portrait public website and legal pages"
 git branch -M main
 ```
 
@@ -94,15 +79,15 @@ git push -u origin main
 
 ## 5. Integrating with the iOS App (`ServiceConfiguration.plist`)
 
-Once published, update `App/ServiceConfiguration.plist` in the Xcode project:
+The iOS `App/ServiceConfiguration.plist` is configured with:
 
 ```xml
 <key>privacyURL</key>
-<string>https://<YOUR_DOMAIN>/privacy/</string>
+<string>https://abdulrehman4438.github.io/portrait-studio-site/privacy/</string>
 <key>termsURL</key>
-<string>https://<YOUR_DOMAIN>/terms/</string>
+<string>https://abdulrehman4438.github.io/portrait-studio-site/terms/</string>
 <key>supportURL</key>
-<string>https://<YOUR_DOMAIN>/support/</string>
+<string>https://abdulrehman4438.github.io/portrait-studio-site/support/</string>
 ```
 
 ---

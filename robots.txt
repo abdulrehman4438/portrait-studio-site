@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 
-Sitemap: https://portrait-studio.github.io/sitemap.xml
+Sitemap: https://abdulrehman4438.github.io/portrait-studio-site/sitemap.xml

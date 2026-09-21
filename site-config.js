@@ -1,30 +1,28 @@
 /**
- * Portrait Studio — Central Configuration Object
+ * 80s Portrait — Central Configuration Object
  * Single source of truth for branding, contact, and legal variables.
  * Replace the values below or use scripts/replace-variables.py prior to public launch.
  */
 const SITE_CONFIG = {
   app: {
-    name: "Portrait Studio",
-    isProvisionalName: true,
-    internalCodename: "RetroPortrait",
+    name: "80s Portrait",
+    isProvisionalName: false,
     tagline: "Back to 1985. Your next '80s photo.",
     shortDescription: "Transform a selected photo into an authentic 1980s-style portrait with private processing and verified credit unlocks.",
-    appStoreUrl: "REPLACE_BEFORE_PUBLISHING_APP_STORE_URL"
+    appStoreUrl: ""
   },
   operator: {
-    legalName: "REPLACE_BEFORE_PUBLISHING_OPERATOR_LEGAL_NAME",
-    jurisdiction: "REPLACE_BEFORE_PUBLISHING_JURISDICTION",
-    supportEmail: "REPLACE_BEFORE_PUBLISHING_SUPPORT_EMAIL",
-    privacyEmail: "REPLACE_BEFORE_PUBLISHING_PRIVACY_EMAIL",
-    mailingAddress: "REPLACE_BEFORE_PUBLISHING_MAILING_ADDRESS"
+    legalName: "Abdulrehman Ishaq",
+    jurisdiction: "State of Texas, United States",
+    supportEmail: "a.rehmanishaq70103@gmail.com",
+    privacyEmail: "a.rehmanishaq70103@gmail.com"
   },
   dates: {
-    effectiveDate: "October 1, 2026",
-    lastUpdated: "October 1, 2026"
+    effectiveDate: "September 21, 2026",
+    lastUpdated: "September 21, 2026"
   },
   urls: {
-    baseUrl: "https://portrait-studio.github.io",
+    baseUrl: "https://abdulrehman4438.github.io/portrait-studio-site",
     home: "/",
     privacy: "/privacy/",
     terms: "/terms/",
