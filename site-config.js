@@ -31,7 +31,7 @@ const SITE_CONFIG = {
     appleEula: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
   },
   commercialModel: {
-    introductoryPreviews: "2 watermarked previews per new account",
+    introductoryPreviews: "1 watermarked preview per new account",
     monthlyStarterCredits: 10,
     monthlyPlusCredits: 25,
     topUpPacks: [10, 25],
